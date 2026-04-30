@@ -1,0 +1,33 @@
+theme = "tanuki"
+
+title = "Apparently Typing"
+
+# The URL the site will be built for
+base_url = "https://apparently-typ.ing"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+# RSS feed
+generate_feeds = true
+
+taxonomies = [
+    { name = "tags", feed = true },
+]
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+mode = "blog"
+
+nav = [
+    { name = "About", url = "/aboutme/" },
+    { name = "Writing", url = "/articles/" },
+    { name = "Projects", url = "/projects/" },
+]
