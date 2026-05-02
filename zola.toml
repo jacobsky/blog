@@ -1,33 +1,42 @@
-theme = "tanuki"
-
-title = "Apparently Typing"
-
-# The URL the site will be built for
+# Personal blog with RSS feed and tags
 base_url = "https://apparently-typ.ing"
-
-# Whether to automatically compile all Sass files in the sass directory
+title = "> Apparently Typing"
+description = "The nerdy musings of an internet denizen"
+theme = "tanuki"
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
-# RSS feed
-generate_feeds = true
+generate_feeds = false
 
 taxonomies = [
-    { name = "tags", feed = true },
+    { name = "tags", feed = false },
 ]
-
-[markdown]
-
-[markdown.highlighting]
-theme = "catppuccin-mocha"
 
 [extra]
 mode = "blog"
 
-nav = [
-    { name = "About", url = "/aboutme/" },
-    { name = "Writing", url = "/articles/" },
-    { name = "Projects", url = "/projects/" },
-]
+[extra.author]
+name=""
+bio="A nerdy technology focused internet denizen"
+
+# [extra.social]
+# github="http://github.com/jacobsky"
+
+[extra.hero]
+title = "> Apparently Typing"
+subtitle = "Musings of a nerdy internet denizen"
+
+[extra.hero.cta]
+text = "Read my musings"
+url = "/blog/"
+
+[[extra.nav]]
+name = "Blog"
+url = "/blog/"
+
+[[extra.nav]]
+name = "About"
+url = "/about/"
+
+# [[extra.nav]]
+# name = "Projects"
+# url = "/projects/"

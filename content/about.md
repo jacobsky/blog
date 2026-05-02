@@ -1,5 +1,8 @@
 +++
 title = "About Me"
+description = "A small self important diatribe"
+template = "page.html"
+path="about"
 +++
 
 Hello! I am an anonymous Senior Software Engineer working out of Japan. I have a wide range of experience from using C to program embedded devices, to cloud native supportability and reliability. As a result, I find myself to be more of a generalist than anything, but pride myself most on ensuring that software is used for one of two things:

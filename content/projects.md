@@ -1,5 +1,8 @@
 +++
 title = "Projects"
+description = "Projects that I am working on"
+template = "page.html"
+path="projects"
 +++
 
 # Here are some things that I am making
