@@ -1,5 +1,5 @@
 +++
-title = "LLM workflows for successful engineering"
+title = "A simpler observability stack"
 date = 2026-05-16
 tags = ["AI", "workflows", "development"]
 +++
