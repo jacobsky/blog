@@ -1,7 +1,6 @@
 +++
 title = "The Scale of LLMs in Engineering"
 date = 2026-07-01
-draft = true
 tags = ["AI", "pi", "workflows", "development"]
 +++
 
@@ -66,7 +65,7 @@ It's not that level 5 is some kind of hellscape, it's really just level 4, with 
 
 ## The sweet spot
 
-The thing is, for as critical of AI agents and LLMs that I am, I don't actually think it's reasonable to ban AI across th eboard. There are entire classes of problems that AI just makes so much less tedious. If you can afford the token spend (i.e. using cheap LLMs) they can absolutely be a fantastic way to claw back extra time that you have to spend to do things like "wiring up boring json RPC apis"; triaging and issue; searching for which module did that one thing; or "adding more logging to APIs". As engineers our most important skill is our ability to analyze and think about the important problems. Being able push those tasks to an LLM is a fantastic way to maximize your ability to think about the parts of your application and services that really matter. As such, I think that it's worth engaging with AI somewhere between levels 2 and 3, depending on your level of discipline.
+The thing is, for as critical of AI agents and LLMs that I am, I don't actually think it's reasonable to ban AI for use in programming. Nor do I think that it's a terrible tool. It, like Springboot, is just a tool that can be misused in areas that it shouldn't. There are entire classes of problems that AI just makes so much less tedious. If you can afford the token spend (i.e. using cheap LLMs) they can absolutely be a fantastic way to claw back extra time that you have to spend to do things like "wiring up boring json RPC apis"; triaging and issue; searching for which module did that one thing; or "adding more logging to APIs". As engineers our most important skill is our ability to analyze and think about the important problems. Being able push those tasks to an LLM is a fantastic way to maximize your ability to think about the parts of your application and services that really matter. As such, I think that it's worth engaging with AI somewhere between levels 2 and 3, depending on your level of discipline.
 
 The biggest key point of discipline is ensuring that LLM contributions are vetted and well understood. This requires a lot of work depending upon which moel yo uare using. There are a few guidelines that may help you build up a better process for engineering with LLMs.
 
