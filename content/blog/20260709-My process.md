@@ -1,7 +1,6 @@
 +++
 title = "My process"
 date = 2026-07-10
-draft = true
 tags = ["AI", "pi", "workflows", "development"]
 +++
 
@@ -51,4 +50,4 @@ Step 4, Implementation: Actually let the LLM atomically implement each TODO whic
 
 Realistically there's no need for a formal step 5, you should be reviewing at every step, but it doesn't hurt to have a formal review once everything is complete to help drive the next iteration.
 
-Yes, these four steps are internded to be a single iteration loop for a project. Not resolving everything in one go. I've actually found a lot of success with this, and the great thing is that it manages to keep the e
+Yes, these four steps are internded to be a single iteration loop for a project. This isn't a magic one shot option, but rather an engineering workflow for completing tasks. It aims to keep you _near_ the drivers seat while leveraging LLM Agents to do the heavy lifting on the code. As people have said "Coding is the easy part", but the hard part is getting to the point where you know what code to write. LLMs can drastically speed this up, but that speed can come at a cost of understanding if you aren't careful. The liability is born from treating the LLM as a compiler which isn't an accurate comparison of technologies. While workflows like that have their place in disposable projects with minmimal needs, but for everything else this process has been fantastic.
