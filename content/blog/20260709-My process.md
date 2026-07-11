@@ -1,12 +1,18 @@
 +++
-title = "My process"
+title = "Being a Centaur with LLMs"
 date = 2026-07-10
 tags = ["AI", "pi", "workflows", "development"]
 +++
 
 So after using my last article to really articulate my feelings on AI and making use of it in my day to day programming, I've been trying to work to embrace "Just how can I get this to work?". As per my mental 0 through 5 model, I have not seen neawrly enough to indicate that anything above a "heavily reviewed and steered" level 3 can be much good in the long term.
 
-The main problem is _not_ that AI is bad at programming. Honestly? They're probably on the whole better than I am for code writing speed and solution finding. The problem mostly comes down to how off track you'll get.
+In summary, I think the best way to think about it is best described using the terminology of Automation Theory. A centaur in Automation theory is anyone that is augmenting themselves with some kind of technology or automation is the equivalent of a human riding a horse, aka a Centaur-like thing. In my article talking about the various levels of vibe coding, what I am mostly struggling to realize is that I can summarize it as suchx
+
+Be a centaur, not a reverse centaur. i.e. Make the tool an extension of yourself and your abilities, do not become an extension of of the tool (because usually all you are is the fall person).
+
+Like, the main problem that I am trying to address is ensuring that whatever process keeps the tools _working for me_. If I hold the liability for the tool's use, being effectively a slave to the tool is _really freaking bad_. And that means an absolute ton of code reviews. The main problem is that reviewing code is a pain and having to review a _massive_ amount of code all at once is even more painful. Like, even when reviewing junior code, I'm not going to entrust a junior with a massive PR at the start. Not going to send them off and be like "Okay, come back after you have implemented this feature", I'm going to set goals and check in with them as they work to ensure that they are on track.
+
+Claude is really like an even less reliable junior engineer. I can't handle reviewing a 1k line PR for a feature to figure out which mistakes are which, nor are most review tools set up to catch slop (like duplicated structs), so it ends up being a scenario where I'm just tempted to just do 10 to 20 turns of AI reviews and LGTM the damn thing. Reviewing the code is a helluva lot harder than wrting the code as you always have to be twice in the first place. After all the main problem _is not_ that the  AI is bad at programming. Honestly? They're probably on the whole better than I am for code writing speed and solution finding. The problem mostly comes down to that it's almost too incentivized to write code and program and not incentivized enough to stick to sensible software patterns or pragmatic architectural use etc.
 
 Like, any sensible engineer will look at the need for message passing and go "Oh, I guess I'll make a DTO that is compatible with my preferred serialization library" then we'll just send it via HTTP/AMQP/MQTT/whatevertransit and you're good! But claude? That clanker looks at that solution and scoffs at it. "Pfft", just convert put it all in a  `Map<String, object>` and serialize it to a JsonValue type and handle it separately on each end...
 
@@ -29,6 +35,8 @@ In my prior experience there are a few key challenges:
 The 4 problems above are kind of the big thing that I dislike about working with clankers and the inherent risks of working with them. To this point, I've mostly done the usual. Trying to double down on AI reviews with `hunk diff` to help me sort through the code after the fact; trying to find and adjust the duplicate methods; trying to really nail and refine the plan. But the problems kept emerging. Still, I was kind of faster than I would be otherwise, so I just need to refine it a little more.
 
 Well, leave it to YouTube's "the primeagean" to give me the solution on a silver platter. No, not his existing process as a whole, but the one specific part of the process of "Stubbing out the files and putting the plan's TODO in their place". For the Primeagean, he seems to have the clanker write _less_ for me, I have them basically lay out the entire plan for each chunk of the code.
+
+In this project, I have develoiped my own spin on it called CNTR (short for Centaur).
 
 The benefit primarily comes down to one thing: I can fucking understand the plan at a glance now. `Plan.md` files or whatever are an improvement over attempting to solve everything in a single chat message of "Please implement [my project] make no mistakes". Instead what happens is that I get to see _in hunk_ where each change is going to happen. Each stub becomes a solution and architectural proposal that I can edit/delete/refine and research.
 
