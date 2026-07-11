@@ -3,6 +3,7 @@ title = "What makes a bad comment"
 date = 2025-11-24
 tags = ["intro", "old"]
 +++
+
 Capturing a conversation between myself and one of my friends about over
 commenting in code bases.
 
@@ -13,52 +14,60 @@ additional noise.
 Unfortunately, there's no right answer in how to write comments such that
 they are not overcommenting (as the rules may vary by team and need), but
 rather, I think it can be nice to have some examples of what I consider
-"useless comments"
+"useless comments".
 
-### Useless Comment #3 - Committing commented out code
+## Useless Comment #1 - Committing Commented Out Code
 
 Outside of specific build by build debugging (though please, just use a
 debugger or improve your logging), comments that leave a bunch of additional
 loose code should just generally not be something that is strewn about the
-codebase. Few things are more distracting than having to skip through vaste
+codebase. Few things are more distracting than having to skip through vast
 swathes of a function just to find what you are looking for.
 
-Note, examples are much different than commenting out chunks of code (such as
-tests), examples are working code that can be used to demonstrate concepts
-and are typically stored separately, such as in a module or package comment
-block. Some languages will even allow this to be compiled to confirm that it
-is working (such as the rust compiler) but otherwise it can just be stored
-in an examples directory with the project.
+> Note: Examples are much different than commenting out chunks of code (such as
+> tests). Examples are working code that can be used to demonstrate concepts
+> and are typically stored separately, such as in a module or package comment
+> block. Some languages will even allow this to be compiled to confirm that it
+> is working (such as the rust compiler) but otherwise it can just be stored
+> in an examples directory with the project.
 
-### Useless Comment #2 - Rephrasing a function or package
+## Useless Comment #2 - Rephrasing a Function or Package
 
 This should be relatively obvious, but there's no reason to comment `Reverses
 the datatype` for a reverse function _unless_ there is something novel about
 it that warrants it.
 
-For example the difference between the following
+For example the difference between the following:
 
 ```
-// Sorts the slice func sort(a []Type) {
+// Sorts the slice
+func sort(a []Type) {
     ...
 }
+```
 
+vs:
+
+```
 // Implements an in place quicksort algorithm with no additional memory
-allocations func sort(a []Type) {
+// allocations
+func sort(a []Type) {
     ...
 }
 ```
 
-### Useless Comment #3 - Explaining the syntax
+## Useless Comment #3 - Explaining the Syntax
 
-The less obvious, but still wasteful comments are Consider the following
-golang snippet
+The less obvious, but still wasteful comments are comments that explain
+syntax. Consider the following golang snippet:
 
-```golang
-// Iterates through the slice for i := range len(connections) {
-    // if the element is currently closed, prune if
-    connections[i].IsDisconnected() {
-        // close close(connections[i])
+```go
+// Iterates through the slice
+for i := range len(connections) {
+    // if the element is currently closed, prune
+    if connections[i].IsDisconnected() {
+        // close
+        close(connections[i])
     }
 }
 ```
@@ -72,19 +81,26 @@ connections.
 
 Unless you are aiming at educating users on the syntax of a language, this
 is typically unnecessary bloat to the code base (and let's be honest, the
-target audience for most comments are yourself)
+target audience for most comments are yourself).
+
+### A Better Approach
 
 Something like the following would be more useful in order to outline the
-intent of why the connections are being iterated.
+intent of why the connections are being iterated:
 
-```
+```go
 // This is to ensure periodic cleanup of connections that have previously
-been closed for i := range len(connections) {
-    // Due to the way that connections if connections[i].IsDisconnected() {
-        // close and prune the associated listener close(connections[i])
+// been closed
+for i := range len(connections) {
+    // Due to the way that connections
+    if connections[i].IsDisconnected() {
+        // close and prune the associated listener
+        close(connections[i])
     }
 }
 ```
+
+## The Takeaway
 
 Remember, comments code syntax self documents _what is happening_ but doesn't
 document the intent of the code. Documenting the intent is the difference

@@ -3,6 +3,7 @@ title = "More Opinions on AI"
 date = 2026-01-05
 tags = ["intro", "old"]
 +++
+
 In my last post, I wrote about my complex feelings regarding `opencode`
 and the general AI workflows in how I integrate it into my workflows.
 To save you some time, my general conclusion is that it's currently
@@ -13,6 +14,8 @@ in building.
 
 Over the past few weeks I have had a few really interesting use cases that
 lead me to feel that much of the _focus_ on AI is backwards.
+
+## The Problem with "Replace" Mentality
 
 The focus of the AI tech and thought leaders in the industry is fixated on:
 
@@ -25,7 +28,7 @@ The focus of the AI tech and thought leaders in the industry is fixated on:
 But this idea of "How to replace X, Y, Z" is an _absolutely terrible_ mentality.
 AI's most valuable contribution is not in replacing humanity (it does this poorly).
 
-AI's greatest contribution is in being a way that we can augment outselves.
+> AI's greatest contribution is in being a way that we can augment ourselves.
 
 ## Learning Assistant
 
@@ -45,7 +48,7 @@ do Japanese for me" way, I've shifted it into being a strict, albeit helpful, te
 assistant. As always, it is no replacement for proper study materials, or instructors
 _but_ they aren't always available at all times and AI can easily fill in that gap.
 (such was the motivation behind making my [Joshu](joushu.apparently-typ.ing) tool
-which helps me to get corrections to my writing)
+which helps me to get corrections to my writing).
 
 This also goes further with other study. _While a major copyright concern_, it
 is a fact of the modern age that the best way to learn is learning in the
@@ -58,7 +61,7 @@ level up my language skills, but it requires the discipline to _never_ copy past
 output. Read it, distill it, and _write it yourself_. That's the only way that it
 contributes to yourself.
 
-## Brain Storming Assistant
+## Brainstorming Assistant
 
 My second place is how I tend to get lost in my own ideas and have difficulty starting.
 I recently did an experiment with de-rusting in Java (it's just really popular where I live)
@@ -75,14 +78,14 @@ This might just be me, but sometimes I need something that can just kind of give
 a direction that I'm incapable of deciding on myself. This part is the
 fundamentally important use of AI in my workflow.
 
-It can be the first place I stop _prior_ to talking to a mentor or subject matter
-expert in unsticking myself.
+> It can be the first place I stop _prior_ to talking to a mentor or subject matter
+> expert in unsticking myself.
 
 _AGAIN_ ingesting the information and considering it myself is the critical part.
 Copying and pasting _is no good_ if you care about your own knowledge and skills
 in the "age of AI".
 
-## Philosophy AI Augmented Development
+## Philosophy: AI Augmented Development
 
 One of the things that I feel like I need to preface a lot of this with is that,
 fundamentally, my personal development and understanding is _on me_. I need to be
@@ -118,4 +121,4 @@ to build my own solution, the only option is to use online models.
 
 Perhaps the best place to start is aiming for the opensource models that I have
 the possibility of running at home. I cannot afford to build a scaffolding for
-my life that vanishes with a company declaring bankruptcy
+my life that vanishes with a company declaring bankruptcy.

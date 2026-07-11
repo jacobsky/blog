@@ -3,12 +3,15 @@ title = "Datastar is going to be my default pick for web technology going forwar
 date = 2025-11-04
 tags = ["intro", "old"]
 +++
+
 After spending the last week getting to grips with datastar, I have come to
 realize that this is the tool/approach I wish I had learned when I was learning
 web fundamentals more than a decade ago. Part of it is that datastar enables a
 primarily systems and backend developer (like myself) to have the fancy full
 featured webapps of the web without having to go through a million hoops of
 the Javascript framework ecosystem (it's basically react all over now).
+
+## The Simplification
 
 The big part of it is how it really just simplifies workflows, it gives you
 (almost) all the power of react, with no "hydration", no state untangling,
@@ -17,11 +20,13 @@ just hypermedia on whatever you like (in my case, templ is what I like). It
 also largely solves the security considerations since everything that matters
 for the state is set and adjusted on the server.
 
+## Two Key Realizations
+
 I had two big realizations that helped me to figure out the key points of
-reactive state.
+reactive state:
 
 1. `PatchElement` should be preferred over `PatchSignal`
-2. When in doubt, just load the whole page (rather than trying to diff things).
+2. When in doubt, just load the whole page (rather than trying to diff things)
 
 The reality is that the framework is _made_ for easily and quickly patching
 the DOM in a smart fashion. You can send as much or as little HTML in the
@@ -29,6 +34,8 @@ response and you need and it will work. If you send the full page, so long
 as the element IDs are consistent (trivial with well composed templates) it
 can diff. If you send the fragments to the right IDs, it will also replace
 them correctly.
+
+## Signals: Use With Caution
 
 Signals, on the otherhand, for as incredibly powerful as they are, are
 something that can be easily abused if one is not cautious. Signals themselves
@@ -45,11 +52,15 @@ Rather than using signals as a kind of global JSON RPC, these signals are --
 in my opinion -- better used almost exclusively on the frontend for small
 islands of frontend heavily reactive state.
 
+## The Architectural Lesson
+
 For example, in my project related to AI, I had to break my brain trying
 to get certain attributes to be set based on a signal, when -- if I were
 to rearchitect it -- I would just add an ID to the button and replace it
 each time with a separate templ template (probably just parameterizing the
 button itself).
+
+## Conclusion
 
 I know that I wrote in my readme on this site that I was planning to add
 HTMX and Alpine, but I think I'm just going to embrace the datastar way and

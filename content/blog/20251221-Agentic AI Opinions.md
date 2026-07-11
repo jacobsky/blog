@@ -3,6 +3,7 @@ title = "Agentic AI Opinions"
 date = 2025-12-21
 tags = ["intro", "old"]
 +++
+
 Recently I have spent a fair bit of time with `opencode` over the past few
 days experimenting and trying to fit it into my neovim development workflow.
 
@@ -15,17 +16,19 @@ I continue to hear about how important it is to have Agentic AI in your
 workflows so I figured I'd give it another shake. Maybe the previous ones
 that I used were just bad.
 
+## Why `opencode`?
+
 `opencode` fit the bill for a few reasons:
 
-- installable via the Arch (btw) User Repository `yay -Sy opencode-bin`
+- Installable via the Arch (btw) User Repository `yay -Sy opencode-bin`
 - [`opencode.nvim`](https://github.com/NickvanDyke/opencode.nvim) fits into
-an nvim workflow.
+  an nvim workflow
 - Terminal oriented
 - Relatively fast
 - Model and vendor agnostic (I should probably write my thoughts about
-why almost everyone should avoid vendor locking)
+  why almost everyone should avoid vendor locking)
 - Potential to support locally hosted models (massive+ because I hate
-being bound to cloud providers who may vanish at a moment's notice.)
+  being bound to cloud providers who may vanish at a moment's notice)
 
 Upon installing, I picked an older project that I wanted to work on and
 spent some time using it's features.
@@ -46,9 +49,9 @@ tests and altering changing files willy nilly to make things pass even going
 so far as to try to duplicate the work of code generation tools like `sqlc`
 that I have been using instead of an ORM.
 
-(NOTE: I am aware that general long form tasks are the kind of task that
-_LLMs are the worst at_, but this is a test and I feel it's necessary to
-give them the harder problems instead of the easier problems.)
+> **NOTE**: I am aware that general long form tasks are the kind of task that
+> _LLMs are the worst at_, but this is a test and I feel it's necessary to
+> give them the harder problems instead of the easier problems.
 
 I _almost_ gave up on the project here, but read a little more into it
 and realized that the problem was probably that I didn't use planning mode
@@ -112,6 +115,8 @@ While it was exceedingly better than my prior experiences (i.e. I am now
 moved from a clear "I hate AI" position to more of a "I don't love it,
 but it might be useful" position), I've still got some major concerns.
 
+### Loss of Ownership
+
 My first major issue is that I feel zero sense of ownership or satisfaction
 from the code produced by the agent. This means that I dread committing the
 work more than when I'm actually working on the project myself. No context,
@@ -123,6 +128,8 @@ abstractions to work with as the AI can just kind of write a bunch of code
 _anyways_. I feel like a passenger just attempting to point an unlearning
 student driver in the vaguely correct direction instead of working as a
 technical leader who is actively participating in the process.
+
+### The Learning Problem
 
 I also learned nothing about golang while using the agent for actually
 programming. Even in the code reviews, while I remember reading through the
@@ -144,6 +151,8 @@ faster and less effort than doing it manually. This is not a high bar for
 someone that is not particularly skilled in the language. Given how fast
 companies want to move, this temptation grows with every single task. And
 the temptation never goes away.
+
+### The Mental Resilience Issue
 
 This experience with language learning is very relevant to the conversation as
 programming is much more closely related to linguistics than it is related to
