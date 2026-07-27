@@ -1,5 +1,5 @@
 +++
-title = "Being a Centaur with LLMs"
+title = "Human _as_ the Loop"
 date = 2026-07-10
 tags = ["AI", "pi", "workflows", "development"]
 +++
@@ -9,6 +9,8 @@ So after using my last article to really articulate my feelings on AI and making
 In summary, I think the best way to think about it is best described using the terminology of Automation Theory. A centaur in Automation theory is anyone that is augmenting themselves with some kind of technology or automation is the equivalent of a human riding a horse, aka a Centaur-like thing. In my article talking about the various levels of vibe coding, what I am mostly struggling to realize is that I can summarize it as such:
 
 > **Be a centaur, not a reverse centaur.** i.e. Make the tool an extension of yourself and your abilities, do not become an extension of of the tool (because usually all you are is the fall person).
+
+In other words, I have a pretty high degree of distain for the "human in the loop" systems which almost always are built specifically to provide a fall guy for the system when it goes wrong.
 
 ## The Review Problem
 
@@ -40,13 +42,13 @@ In my prior experience there are a few key challenges:
 
 The 4 problems above are kind of the big thing that I dislike about working with clankers and the inherent risks of working with them. To this point, I've mostly done the usual. Trying to double down on AI reviews with `hunk diff` to help me sort through the code after the fact; trying to find and adjust the duplicate methods; trying to really nail and refine the plan. But the problems kept emerging. Still, I was kind of faster than I would be otherwise, so I just need to refine it a little more.
 
-## The CNTR Process
+## The Human as the Loop
 
 Well, leave it to YouTube's "the primeagean" to give me the solution on a silver platter. No, not his existing process as a whole, but the one specific part of the process of "Stubbing out the files and putting the plan's TODO in their place". For the Primeagen, he seems to have the clanker write _less_ for me, I have them basically lay out the entire plan for each chunk of the code.
 
-In this project, I have developed my own spin on it called **CNTR** (short for Centaur). The idea of the name is to keep the project focused on being about augmenting existing processes.
+In this project, I have developed my own spin on it called **HATL** (short for Human as the Loop). The idea of the name is to keep the project focused on being about augmenting existing processes by making everything centered around human decision making. The human gets to act as the orchestrator of tools and is intentionally kept making all high and low level decision making.
 
-The benefit primarily comes down to one thing: I can fucking understand the plan at a glance now. `Plan.md` files or whatever are an improvement over attempting to solve everything in a single chat message of "Please implement [my project] make no mistakes". Instead what happens is that I get to see _in hunk_ where each change is going to happen. Each stub becomes a solution and architectural proposal that I can edit/delete/refine and research.
+The key benefit is mostly one thing: I can fucking understand what my code agents are doing now. `Plan.md` files or whatever are an improvement over attempting to solve everything in a single chat message of "Please implement [my project] make no mistakes". Instead what happens is that I get to see _in hunk_ where each change is going to happen. Each stub becomes a solution and architectural proposal that I can edit/delete/refine and research.
 
 Overall I've split things into several "steps".
 
