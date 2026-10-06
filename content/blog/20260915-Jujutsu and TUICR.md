@@ -1,7 +1,6 @@
 +++
 title = "Jujutsu"
 date = 2026-09-17
-draft = true
 tags = ["vcs", "jj", "workflows", "development"]
 +++
 
@@ -18,7 +17,7 @@ To be honest, I wasn't really interested in learning another source control tool
 I introduced worktrees into my workflows because I found myself needing to pop back and forth between branches with increasing frequency.
 I introduced worktrunk into my workflows because I found lazygit to not be enough to ergonomically create and prune worktrees.
 I introduced hunk into my workflows because I was having trouble with getting the context from agent driven code reviews without the direct code context.
-I introduced tuicr into my workflows because I really had trouble following along reviewing code in github rather than a terminla where I code 90% of the time.
+I introduced tuicr into my workflows because I really had trouble following along reviewing code in github rather than a terminal where I code 90% of the time.
 etc
 
 So what did I get by introducing jj?
@@ -71,6 +70,12 @@ Scenarios where you would still need a workspace:
 - Running multiple agents in parallel on different tasks.
 
 This leads to like, the final form of the worktree here you really don't have to prune them ever., You can just let the forest
+
+## How TUICR fits in
+
+While I've mostly been talking about jj this time, tuicr also has made a pretty big difference in how I review code. As JJ makes creating new changes trivial, tools like hunk started to break down a bit as it got harder to isolate exactly which changes I wanted to take a second look at.
+
+This is especially relevant if you end up with various LLM accelerated workflows, so it's nice to be able to take a subsection of the changes that I've been working on, get them in context and then make notes and feedback items (usually for myself, sometimes for an LLM). Some things aren't evident until you take a step back and see how the pieces fit together. Mixing in an agent like pi or claude to take your feedback and mark up some TODOs has become a super handy way of iterating on a problem privately before I finally squash everything together and push it via a bookmark.
 
 ## Final Word
 
