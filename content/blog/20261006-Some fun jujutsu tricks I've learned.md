@@ -1,5 +1,5 @@
 +++
-title = "Jujutsu"
+title = "Cool tricks with Jujutsu"
 date = 2026-10-06
 tags = ["vcs", "jj", "workflows", "development"]
 +++
