@@ -26,17 +26,21 @@ Hello! I am an anonymous Senior Software Engineer working out of Japan. I have a
 
 ## Begrudgingly Known Languages
 
-Languages that I know for professional reasons, but I would prefer to avoid as much as possible.
+Languages that I know for professional reasons, but are the epitomy of not fun to use or develop in.
 
-- Java
-- C#
-- Javascript/Typescript
-- Python
+- C++ - I "know" it, but I still think that for the most part you are better going with C, Go, or Rust because C++ gets so ugly so fast >.>;;
+- Java - To be honest, it's less Java itself and more... everything around java that I feel saps the joy out of programming
+- C# - It's like Java but slightly less bad! Worst part about it is the freaking docs though. I have yet to find a place that provides worse documentation.
+- Javascript/Typescript - I actually don't dislike the languages so much as I find it being used in the wrong domain too much.
+- Python - More of a domain thing. It's fantastic for simple shell utilities and scripts that are short enough to rewrite from scratch when you need to change it. For anything more involved or larger, I want a compiler. You'll just be more productive.
 
 ## Technologies That I Like
 
-- Godot Game Engine
-- Git/Gitops
+- Godot Game Engine - The game engine that got me to actually love making games.
+- Jujutsu
 - Kubernetes
+- DevOps/GitOps deployment
 - Containerization
-- Terminal applications
+- Nvim (in particular lazynvim)
+- Anything that can run in a terminal emulator like wezterm or ghostty
+- Linux in general
