@@ -1,6 +1,6 @@
 +++
 title="> Apparently Typing"
-template="home.html"
+template="index.html"
 +++
 
 _Someone_ is apparently typing.

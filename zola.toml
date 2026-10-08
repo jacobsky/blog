@@ -1,8 +1,9 @@
 # Personal blog with RSS feed and tags
+
 base_url = "https://apparently-typ.ing"
 title = "> Apparently Typing"
 description = "The nerdy musings of an internet denizen"
-theme = "tanuki"
+theme = "tabi"
 compile_sass = true
 build_search_index = true
 generate_feeds = false
@@ -12,31 +13,18 @@ taxonomies = [
 ]
 
 [extra]
-mode = "blog"
+# Tabi reads navigation from `menu`
+menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "about", url = "about", trailing_slash = true },
+]
 
+# Author configuration
 [extra.author]
 name=""
 bio="A nerdy technology focused internet denizen"
 
+# Social links (commented out for now)
 # [extra.social]
 # github="http://github.com/jacobsky"
 
-[extra.hero]
-title = "> Apparently Typing"
-subtitle = "Musings of a nerdy internet denizen"
-
-[extra.hero.cta]
-text = "Read my musings"
-url = "/blog/"
-
-[[extra.nav]]
-name = "Blog"
-url = "/blog/"
-
-[[extra.nav]]
-name = "About"
-url = "/about/"
-
-# [[extra.nav]]
-# name = "Projects"
-# url = "/projects/"
