@@ -1,0 +1,28 @@
+/* Renamed families so theme's font-display: swap rules are never used. */
+
+@font-face {
+    src: local('Inter'),
+        url('fonts/Inter4.woff2') format("woff2");
+    font-family: 'Inter Optional';
+    font-display: optional;
+}
+
+@font-face {
+    src: local('Source Serif'),
+        url('fonts/SourceSerif4Variable-Roman.ttf.woff2') format("woff2");
+    font-family: 'Source Serif Optional';
+    font-display: optional;
+}
+
+@font-face {
+    src: local('Cascadia Code'),
+        url('fonts/CascadiaCode-SemiLight.woff2') format("woff2");
+    font-family: 'Cascadia Code Optional';
+    font-display: optional;
+}
+
+:root {
+    --sans-serif-font: 'Inter Optional', Helvetica, Arial, sans-serif;
+    --serif-font: 'Source Serif Optional', 'Georgia', serif;
+    --code-font: 'Cascadia Code Optional';
+}

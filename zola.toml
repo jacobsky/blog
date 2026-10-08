@@ -13,6 +13,9 @@ taxonomies = [
 ]
 
 [extra]
+# Loads after main.css; overrides theme font-display: swap
+stylesheets = ["font-display.css"]
+
 # Tabi reads navigation from `menu`
 menu = [
     { name = "blog", url = "blog", trailing_slash = true },
