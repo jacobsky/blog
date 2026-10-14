@@ -39,7 +39,7 @@ it that warrants it.
 
 For example the difference between the following:
 
-```
+```go
 // Sorts the slice
 func sort(a []Type) {
     ...
@@ -48,7 +48,7 @@ func sort(a []Type) {
 
 vs:
 
-```
+```go
 // Implements an in place quicksort algorithm with no additional memory
 // allocations
 func sort(a []Type) {

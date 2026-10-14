@@ -8,7 +8,7 @@ Jujutsu has really been probably the most transformative tool for me in the past
 
 ## Cool thing #1 Aliases
 
-Managing git has always been some what of a "build your own muscle memory" kind of thing, with many arcane workflows resolved by wrapping other tools, using one of the super powered guis or tuis, or just generally learning to deal with it. More than anything, dealing with history tyupically meant that you neede to remember specific syntax for things, but you can quickly and easily configure various aliases for kinds of commits you want to look at.
+Managing git has always been somewhat of a "build your own muscle memory" kind of thing, with many arcane workflows resolved by wrapping other tools, using one of the super powered guis or tuis, or just generally learning to deal with it. More than anything, dealing with history typically meant that you needed to remember specific syntax for things, but you can quickly and easily configure various aliases for kinds of commits you want to look at.
 
 For example:
 
@@ -43,12 +43,12 @@ With the above, any attempts to `jj git push` with scratch or a wip description 
 
 ## Cool thing #3 Jujutsu as a WSL/Windows bridge
 
-For my job, I have to run my code changes and test them in both a docker environment as well as a more traditional windows deployment environment. Before testing in windows was rather tedious having to push a remote branch and copy past between the two, but it's actually rather trivial to just point jujutsu at a local directory path as origin.
+For my job, I have to run my code changes and test them in both a docker environment as well as a more traditional windows deployment environment. Before testing in windows was rather tedious having to push a remote branch and copy paste between the two, but it's actually rather trivial to just point jujutsu at a local directory path as origin.
 
 Using the revset alias, it's made even easier as you can define a pattern like `bookmark(glob:'win-*')` which I can use in tandem with jj's git export feature to help pull only the branches that I want to test in windows over and trivially get to testing
 
-## Cool thing about jujutsu #3 Easy Stacked PRs
+## Cool thing #4 Easy Stacked PRs
 
-A number of git providers/extensions (including github) have started allowing Pull Request Stacks where you can associate multiple pull requests with a single commit. In git this tends to require multiple branches, but you can get this for free by just continuing to develop on your main PR and just adding new bookmarks and the stacked PRs will naturally emerge. Making a change to an earlier PR is automatically reflected when you next push, so there's no need for any tedious rebasing (it just happens as you add new commits and stack things on top of eachother)
+A number of git providers/extensions (including github) have started allowing Pull Request Stacks where you can associate multiple pull requests with a single commit. In git this tends to require multiple branches, but you can get this for free by just continuing to develop on your main PR and just adding new bookmarks and the stacked PRs will naturally emerge. Making a change to an earlier PR is automatically reflected when you next push, so there's no need for any tedious rebasing (it just happens as you add new commits and stack things on top of each other)
 
 Honestly, I've been amazed because I don't really need to reach for anything other than jj for 99% of my day to day version control operations. It's just that good!

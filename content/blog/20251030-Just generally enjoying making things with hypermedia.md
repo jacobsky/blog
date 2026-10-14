@@ -7,7 +7,7 @@ tags = ["intro", "old"]
 Over the last week, I have had a very pleasant time working with
 datastar. Originally, I had intended to stick primarily to HTMX and Alpine
 for the frontend reactivity, but Datastar has largely won me over (for
-personal projects at least) due to it's heavy emphasis on easily including
+personal projects at least) due to its heavy emphasis on easily including
 both aspects of reactivity into my applications. In fact, I got another idea
 that is probably only possible with datastar (or a SPA, but let's be real,
 SPAs are just not what I'm interested in).
@@ -106,7 +106,7 @@ like websockets).
 ## Minor Hangups
 
 That being said, while I have had nothing but good experiences with datastar,
-it's not without it's hangups. In particular, I ran into three minor issues
+it's not without its hangups. In particular, I ran into three minor issues
 as I worked on my initial prototype:
 
 1. **SDK documentation variability** - The go SDK documentation seemed a bit
@@ -117,7 +117,7 @@ as I worked on my initial prototype:
 2. **Minor syntax disagreements** - There seems to be a minor disagreement with
    how two of the 1.0 RCs work that have some cryptic (or non-existent) syntax
    errors (particularly `data-attr-myattr` vs `data-attr:myattr`). It was
-   nothing major, but lead to some initial hangups and confusion.
+   nothing major, but led to some initial hangups and confusion.
 
 3. **Pro debugger** - The debugger being blocked behind pro might hinder
    adoption slightly. I don't think it's entirely necessary, but -- at the

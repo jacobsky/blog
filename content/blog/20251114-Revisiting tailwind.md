@@ -38,7 +38,7 @@ thoroughly). There are two major reasons that I found:
 
 The one big caveat is that you really need to understand tailwind to make
 use of it, but -- personally -- I don't find that to be a compelling argument
-against it's use (you need to have a good understanding of CSS to use it in
+against its use (you need to have a good understanding of CSS to use it in
 a traditional way anyways). But the biggest win is how self explanatory each
 piece of it is.
 

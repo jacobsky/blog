@@ -7,7 +7,7 @@ tags = ["intro", "old"]
 Recently I have spent a fair bit of time with `opencode` over the past few
 days experimenting and trying to fit it into my neovim development workflow.
 
-[`opencode`](opencode.ai) is an opensource coding agent aimed at running AI
+[`opencode`](https://opencode.ai) is an opensource coding agent aimed at running AI
 agents via the commandline and is compatible with all kinds of coding agents
 both hosted online and hosted locally.
 
@@ -31,7 +31,7 @@ that I used were just bad.
   being bound to cloud providers who may vanish at a moment's notice)
 
 Upon installing, I picked an older project that I wanted to work on and
-spent some time using it's features.
+spent some time using its features.
 
 ## It's not about the task, it's about the plan
 
@@ -77,7 +77,7 @@ reviewing.
 This did have the downside of, every time I give the agent a task, I need
 to do a code review before committing and moving forward. While `opencode`
 comes with a nice `/review` command, there is a bit of a problem with having
-an LLM review it's own work. It _might_ pick up on things, but it's still got
+an LLM review its own work. It _might_ pick up on things, but it's still got
 the weakness of potentially explaining or judging things wrong so whenever
 I use this, I do feel that I'm stuck spending a lot of time just reading
 through code. It works, but it's not what I really love doing.
@@ -185,7 +185,7 @@ to scaffold my projects in a way that _I_ like consistently); converting
 between logging solutions across a project (like a better grep/find replace);
 as a reviewer for my commits and work; and finally hyper specific function
 level implementations for specific flows that I find exceptionally tedious
-an uninteresting (i.e. JWT authorization, writing specific test cases, etc).
+and uninteresting (i.e. JWT authorization, writing specific test cases, etc).
 
 I plan to generally avoid it for doing more than that. I don't plan to use it
 for asking questions about the code base itself and really only plan to ask

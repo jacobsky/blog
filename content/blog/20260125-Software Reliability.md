@@ -33,11 +33,11 @@ One reason that I rarely use coding agents for more than auto complete tasks is 
 
 ## The Beethoven Analogy
 
-My earliest notion of reliability was in my highschool band. Notably, our conductor/teacher said:
+My earliest notion of reliability was in my high school band. Notably, our conductor/teacher said:
 
 > "Music isn't like other classes. 90% may get you an A, but it sounds awful"
 
-And there's a good reason for that. For simplicity, let's use Beethoven's 5th symphony (sometimes referred to as the much cooler name "Fate Symphony") which has a runtime of about 30-40 minutes. If you assume a 99% reliability rate that each instrument will play _all the proper notes_ each player would be allowed to play incorrect notes for 18 seconds (assuming a conductor wants the speedier 30 minute runtime). When you extrapolate that out to _every instrument_ (21 different scores) that's a grant total of 378 seconds worth of wrong notes spread throughout the 30 minutes. You either end up with a single 18 seconds of the most shrill and vile sounds imaginable or you have as _plethora of small things_ that sound wrong and off and make the whole performance rather... disappointing.
+And there's a good reason for that. For simplicity, let's use Beethoven's 5th symphony (sometimes referred to as the much cooler name "Fate Symphony") which has a runtime of about 30-40 minutes. If you assume a 99% reliability rate that each instrument will play _all the proper notes_ each player would be allowed to play incorrect notes for 18 seconds (assuming a conductor wants the speedier 30 minute runtime). When you extrapolate that out to _every instrument_ (21 different scores) that's a grand total of 378 seconds worth of wrong notes spread throughout the 30 minutes. You either end up with a single 18 seconds of the most shrill and vile sounds imaginable or you have a _plethora of small things_ that sound wrong and off and make the whole performance rather... disappointing.
 
 ## Tech Reliability Metrics
 

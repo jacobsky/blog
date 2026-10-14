@@ -12,13 +12,13 @@ Realistically, there's nothing intrinsically _wrong_ with Spring, but as a relat
 
 Contrary to the more "straight-forward" systems design languages like C, Go, Rust and Zig, Spring takes Java (a relatively straight-forward language) and, in an effort to make things "simple" moves much of the complexity of the application behind arcane tags and @attributes. This magical `@`ttribute oriented design is intended to hide the complexity of mundane details like connection pooling with declarative models. Want to make a value a database table? _Slap on the_ `@Entity`! How about adding associations? Just put your `@SomethingToSomething` relationship attribute on there! What about making sure that your function is transactional? Here's `@Transactional` to save the day!
 
-Unfortunately, as a newbie, it leads me to ask the question "So wait, how does this work?" _waaaaaaaaaaaaaaaay_ more than any other language I've worked in. It also sends me for the documentation where before I'd usually just kind of understand it via the code itself. How does the `@Transactional` attribute work? What is a proxy? Why is the stack trace 200 between my code and the side effect when 190 of them Something Proxyu bean? Your guess is as good as mine! Better go to the docs! Oh wait. Spring rivals _microslop_ for quality in the documentation (note, if you've never had to read `learn.microsoft.com` you are lucky).
+Unfortunately, as a newbie, it leads me to ask the question "So wait, how does this work?" _waaaaaaaaaaaaaaaay_ more than any other language I've worked in. It also sends me for the documentation where before I'd usually just kind of understand it via the code itself. How does the `@Transactional` attribute work? What is a proxy? Why is the stack trace 200 between my code and the side effect when 190 of them Something Proxy bean? Your guess is as good as mine! Better go to the docs! Oh wait. Spring rivals _microslop_ for quality in the documentation (note, if you've never had to read `learn.microsoft.com` you are lucky).
 
 ## The Hibernate Problem
 
 Additionally, my long standing knowledge of SQL kind of comes grinding up against this ecosystem whenever I run into a problem. In my brain, every database problem is just a `SELECT thing FROM thang JOIN ON otherThing WHERE condition ORDER BY X LIMIT BY Y` and you run it in your sql querier of choice against a dummy database and adjust until it looks good. Problem solved.
 
-But you know, SQL is for nerds and we don't have time for learning that. We've got features to ship and disruption to cause. Hibernate gets rid of all that _nerdy junk_ and let's us just think about objects and their relations then we can just shove it all in something that extends `JpaRepositoryBean` and hibernate will do all the nerdy homework that's for suckers! Back to shipping features, daily scrums, story points and far too much jargon to shake a stick at.
+But you know, SQL is for nerds and we don't have time for learning that. We've got features to ship and disruption to cause. Hibernate gets rid of all that _nerdy junk_ and lets us just think about objects and their relations then we can just shove it all in something that extends `JpaRepositoryBean` and hibernate will do all the nerdy homework that's for suckers! Back to shipping features, daily scrums, story points and far too much jargon to shake a stick at.
 
 Using JPA/hibernate vs SQL as an example, consider the following hypothetical java class:
 
@@ -47,7 +47,7 @@ public class Bar {
 }
 ```
 
-These are simple classes with a one to one two way relationship. This is kind of _more or less_ how you would want to structure things with Spring's ORMs for object modeling purposes. If you have a Bar, you want to be able to get it's foo, and vice versa. It seems sensible on the surface. Also, for performance, you would also be prone to thinking "Hey, let's lazy load, no sense in loading both unless we need to access it, right?"
+These are simple classes with a one to one two way relationship. This is kind of _more or less_ how you would want to structure things with Spring's ORMs for object modeling purposes. If you have a Bar, you want to be able to get its foo, and vice versa. It seems sensible on the surface. Also, for performance, you would also be prone to thinking "Hey, let's lazy load, no sense in loading both unless we need to access it, right?"
 
 ### The Lazy Loading Lie
 
@@ -83,7 +83,7 @@ Has to go through their awkward SQL, but not `Specification`, `CriteriaBuilder` 
 
 Needless to say, I keep asking myself _why_? Why are there so many foot guns in this ecosystem? Why are there so many hyper specific edge cases? Why is it that:
 
-- Hibernate makes is so easy to write two way `@OneToOne` bindings so lazy loading causes additional invisible selects (even though you were thinking you were safe by selecting lazy)?
+- Hibernate makes it so easy to write two way `@OneToOne` bindings so lazy loading causes additional invisible selects (even though you were thinking you were safe by selecting lazy)?
 - That navigating even the simplest codebase is not only requires, but is _encouraged_ to create a dozen abstraction layers so you wear out your "Go to definition" motion (or hotkey if you aren't a vim motions user)
 - Stuck perpetually reading through awful barely documented Spring code that basically always sends you to the depth of stack overflow in search of writings from other lost and weary souls searching for the isolated hermits that can elucidate us of the mysteries of the code
 
@@ -111,4 +111,4 @@ Ultimately, this is a rather pragmatic way to manage projects. There's a certain
 
 Like, for every time I think "Oh, why did you implement a stale job cleaner by hand? You can just create a pg-cron?" I realize the reason is mostly "If we used that, we'd have to expect that they understand postgres" instead of allowing them to just read the spring code.
 
-And that's really what it all comes down to. A pragmatic choice to optimize staffing and titanic projects instead of pushing deep technical competence and proper technical competence. For big long running projects, in many cases, team changes and head counts are just _going to happen_ and being able to easily and trivially replace engineers is a rather huge HR win. It does come at a price though, and -- in my opinion -- explains why so many companies went crazy with AI and vibe coding. The selling point of AI agents is that they are a Yes Man in programmer form. It's all about risk assessment and pragmatic approaches to staffing, _rather_ that effective means to develop the best software. While I personally find it frustrating, And I guess that's fine.
+And that's really what it all comes down to. A pragmatic choice to optimize staffing and titanic projects instead of pushing deep technical competence and proper technical competence. For big long running projects, in many cases, team changes and head counts are just _going to happen_ and being able to easily and trivially replace engineers is a rather huge HR win. It does come at a price though, and -- in my opinion -- explains why so many companies went crazy with AI and vibe coding. The selling point of AI agents is that they are a Yes Man in programmer form. It's all about risk assessment and pragmatic approaches to staffing, _rather_ than effective means to develop the best software. While I personally find it frustrating, And I guess that's fine.

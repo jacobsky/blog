@@ -14,7 +14,7 @@ Anyways, onto the experiment.
 
 ## The issue
 
-Docker stack deployments were getting a bit finicky, especially as I wanted to update things. I always had to launch a build via CI and then -- as my swarm config was mostly manually -- I would have to login, adjust my `docker-stack` files and then do another push. This lead to me having a few articles queued up that never see the light of day as I just was too lazy to deploy things.
+Docker stack deployments were getting a bit finicky, especially as I wanted to update things. I always had to launch a build via CI and then -- as my swarm config was mostly manually -- I would have to login, adjust my `docker-stack` files and then do another push. This led to me having a few articles queued up that never see the light of day as I just was too lazy to deploy things.
 
 As I was also looking to learn kubernetes, it was a good chance to kill two birds with one stone.
 

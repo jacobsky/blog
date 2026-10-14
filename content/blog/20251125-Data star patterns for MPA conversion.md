@@ -27,10 +27,10 @@ such as by using specific wildcards.
 For this blog, I have the:
 
 ```go
-func (h *handler) servehttp(w http.responsewriter, r *http.request) {
+func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     switch r.PathValue("id") {
     case "all":
-        // continously read all posts
+        // continuously read all posts
         // .. snip
     case "latest":
         // Shows only the latest post

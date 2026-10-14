@@ -4,7 +4,7 @@ date = 2026-07-01
 tags = ["AI", "pi", "workflows", "development"]
 +++
 
-Like any technology, the main differentiator between a "good" technology and a "bad" technology is in the usage of the tool. LLMs have exploded in popularity in the past year gaining incredible traction as coding agents. Far beyond the "Chat window" and "LLM code autocomplete" of the ancient days of 2024. What I'm finding is that we're still very much in the "hype craze" phase of figuring out where LLMs as tools really fix in. What makes a good AI agent project? What makes a good coding agent? What makes a good general use agent?
+Like any technology, the main differentiator between a "good" technology and a "bad" technology is in the usage of the tool. LLMs have exploded in popularity in the past year gaining incredible traction as coding agents. Far beyond the "Chat window" and "LLM code autocomplete" of the ancient days of 2024. What I'm finding is that we're still very much in the "hype craze" phase of figuring out where LLMs as tools really fit in. What makes a good AI agent project? What makes a good coding agent? What makes a good general use agent?
 
 There's two answers, the honest answer of "Uhhhh, tbh, no fucking clue" and the lie "writing code as a software engineer is basically over".
 
@@ -75,8 +75,8 @@ The biggest key point of discipline is ensuring that LLM contributions are vette
 
 1. **LLMs are not allowed to use git** - While some kind of hook may be useful for a system like jujutsu (which keeps a rolling log of every change and command in repo), the key point is that committing is a human responsibility. Giving this over to the LLM means a high likelihood of just leaving it to the LLM instead of taking responsibility for your tooling.
 
-2. **Use the cheaper models** - The reality is that while more powerful models like Claude Opus or Open AI Codex are definitely better at performing the long running tasks, the limits are out of plain cite. Rather than getting obvious bugs, you get subtle bugs. When you have a cheap model that completes your task by stubbing a function and writing "TODO: Finish this function", that is a massive call out to the limitation that you are working with.
+2. **Use the cheaper models** - The reality is that while more powerful models like Claude Opus or Open AI Codex are definitely better at performing the long running tasks, the limits are out of plain sight. Rather than getting obvious bugs, you get subtle bugs. When you have a cheap model that completes your task by stubbing a function and writing "TODO: Finish this function", that is a massive call out to the limitation that you are working with.
 
 3. **Stay in the code** - Even if you don't write it, you need to read everything always.
 
-I'll work on another blog post later detailing how I'm creating a process that grants me better control over the LLM output and has lead to very successful feature implementations without sacrificing quality in the next one.
+I'll work on another blog post later detailing how I'm creating a process that grants me better control over the LLM output and has led to very successful feature implementations without sacrificing quality in the next one.

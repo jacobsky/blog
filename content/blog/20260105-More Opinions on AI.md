@@ -13,7 +13,7 @@ be generally useless for building, well, anything that I'm interested
 in building.
 
 Over the past few weeks I have had a few really interesting use cases that
-lead me to feel that much of the _focus_ on AI is backwards.
+led me to feel that much of the _focus_ on AI is backwards.
 
 ## The Problem with "Replace" Mentality
 
@@ -68,7 +68,7 @@ I recently did an experiment with de-rusting in Java (it's just really popular w
 and one of the things that I was trying to figure out what just "Where do I start?".
 
 Asking AI "I wanna study java by making a webserver, where should I start" gave me a great
-starting point where various search results just lead me to more questions.
+starting point where various search results just led me to more questions.
 
 It doesn't replace me actually doing the work (though again, it's a good learning tool
 when you don't copy-paste) but it does help me to get _unstuck_ and break

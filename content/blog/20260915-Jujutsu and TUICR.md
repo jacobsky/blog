@@ -26,14 +26,14 @@ So what did I get by introducing jj?
 - Conflicts that I can deal with later.
 - A code first workflow with a tool that I only have to think about in the context of saving my work.
 - A tool that make check pointing and committing easy.
-- The end of branch mangement
-- The end of worktree managemnt
+- The end of branch management
+- The end of worktree management
 - The end of rebase hell
 - I don't have to make my team change anything because it uses git under the hood
 
 And all this took me less than an afternoon to learn (thanks to the lovely `jjui` tool which makes this transition super seamless). More than anything, the undo feature is probably the single greatest part of the tool. You can (more or less) experiment and move commits around with reckless abandon knowing that you can always reverse the op log however far back you need.
 
-It's strange, because I'm so used to there always being tradeoffs. But somehow jujutsu manages to give me all the power I need with none of them. And it's become a core part of my workflow since day 1 of adoptin it. It's legitimately become difficult to reutnr to git based workflows.
+It's strange, because I'm so used to there always being tradeoffs. But somehow jujutsu manages to give me all the power I need with none of them. And it's become a core part of my workflow since day 1 of adopting it. It's legitimately become difficult to return to git based workflows.
 
 I think the one thing that has been a bit of a challenge is fixing my brain to not think in terms of git.
 
@@ -41,7 +41,7 @@ I think the one thing that has been a bit of a challenge is fixing my brain to n
 
 In git, branches are foundational places where you put changes. You first have to create a branch of some kind to start making changes. So if you have changes A, B, C that should be parallel changes, you have to create one branch for each, then make the changes and commit.
 
-In jj, changes exist with the sole requirement that they have _some_ parent commit (or are root). For the most part, they just exist in their own space, and only their relation to other changes creates branches. If you need A, B, and C as paralell changes, they may share a common parent, or they may not, it's flexible. If you want to reparent, it's a trivial rebase operation (maybe you have to resolve a conflict with `jj new` and `jj resolve`) and suddenly they are a series of changes. Which one might call a branch.
+In jj, changes exist with the sole requirement that they have _some_ parent commit (or are root). For the most part, they just exist in their own space, and only their relation to other changes creates branches. If you need A, B, and C as parallel changes, they may share a common parent, or they may not, it's flexible. If you want to reparent, it's a trivial rebase operation (maybe you have to resolve a conflict with `jj new` and `jj resolve`) and suddenly they are a series of changes. Which one might call a branch.
 
 This leads to how it handles the creation of branches by using bookmarks and then walking back from the last common ancestor.
 
@@ -69,7 +69,7 @@ Scenarios where you would still need a workspace:
 - Running an agent on a background task while you work
 - Running multiple agents in parallel on different tasks.
 
-This leads to like, the final form of the worktree here you really don't have to prune them ever., You can just let the forest
+This leads to like, the final form of the worktree here you really don't have to prune them ever. You can just let the forest
 
 ## How TUICR fits in
 
@@ -79,6 +79,6 @@ This is especially relevant if you end up with various LLM accelerated workflows
 
 ## Final Word
 
-It's incredibly rare to find a tool that solves problems while introducing _none_. I cannot recommend jujutsu enough. It is both perfect for veterant and junior evelopers alike and you owe it to yoursef to give it a shot. It's free~
+It's incredibly rare to find a tool that solves problems while introducing _none_. I cannot recommend jujutsu enough. It is both perfect for veteran and junior developers alike and you owe it to yourself to give it a shot. It's free~
 
 , I'd highly recommend you give it a whirl here: <https://github.com/jj-vcs/jj>

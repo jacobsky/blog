@@ -8,9 +8,9 @@ So after using my last article to really articulate my feelings on AI and making
 
 In summary, I think the best way to think about it is best described using the terminology of Automation Theory. A centaur in Automation theory is anyone that is augmenting themselves with some kind of technology or automation is the equivalent of a human riding a horse, aka a Centaur-like thing. In my article talking about the various levels of vibe coding, what I am mostly struggling to realize is that I can summarize it as such:
 
-> **Be a centaur, not a reverse centaur.** i.e. Make the tool an extension of yourself and your abilities, do not become an extension of of the tool (because usually all you are is the fall person).
+> **Be a centaur, not a reverse centaur.** i.e. Make the tool an extension of yourself and your abilities, do not become an extension of the tool (because usually all you are is the fall person).
 
-In other words, I have a pretty high degree of distain for the "human in the loop" systems which almost always are built specifically to provide a fall guy for the system when it goes wrong.
+In other words, I have a pretty high degree of disdain for the "human in the loop" systems which almost always are built specifically to provide a fall guy for the system when it goes wrong.
 
 ## The Review Problem
 
@@ -44,7 +44,7 @@ The 4 problems above are kind of the big thing that I dislike about working with
 
 ## The Human as the Loop
 
-Well, leave it to YouTube's "the primeagean" to give me the solution on a silver platter. No, not his existing process as a whole, but the one specific part of the process of "Stubbing out the files and putting the plan's TODO in their place". For the Primeagen, he seems to have the clanker write _less_ for me, I have them basically lay out the entire plan for each chunk of the code.
+Well, leave it to YouTube's "the primeagen" to give me the solution on a silver platter. No, not his existing process as a whole, but the one specific part of the process of "Stubbing out the files and putting the plan's TODO in their place". For the Primeagen, he seems to have the clanker write _less_ for me, I have them basically lay out the entire plan for each chunk of the code.
 
 In this project, I have developed my own spin on it called **HATL** (short for Human as the Loop). The idea of the name is to keep the project focused on being about augmenting existing processes by making everything centered around human decision making. The human gets to act as the orchestrator of tools and is intentionally kept making all high and low level decision making.
 

@@ -37,7 +37,7 @@ them correctly.
 
 ## Signals: Use With Caution
 
-Signals, on the otherhand, for as incredibly powerful as they are, are
+Signals, on the other hand, for as incredibly powerful as they are, are
 something that can be easily abused if one is not cautious. Signals themselves
 can be driven by the client and the server for updating the client state. I
 think that it can lead to some.... poor performance and such if signals are
